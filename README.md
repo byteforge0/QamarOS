@@ -93,6 +93,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 </p>
 
 
+## Installation
 1. **Clone the repository**
    ```bash
    git clone [https://github.com/Byteforge0/QamarOS.git](https://github.com/Byteforge0/QamarOS.git)
