@@ -34,7 +34,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 
 ---
 
-## Features
+## ✨ Features
 
 ### Core system
 - Custom boot screen
@@ -100,6 +100,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
   <img src="./screenshots/terminal.png" alt="QamarOS Terminal" width="800">
 </p>
 
+
 1. **Clone the repository**
    ```bash
    git clone [https://github.com/Byteforge0/QamarOS.git](https://github.com/Byteforge0/QamarOS.git)
@@ -113,7 +114,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
    ```bash
    npm start
 
-### ✨ **Features**
+## ✨ **Features**
 ### **Core System**
 **Custom Boot Screen**: Animated sequence with boot sound support.
 
@@ -123,6 +124,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 
 **Search Bar**: Quickly find and launch desktop apps.
 
+
 ### **Desktop UI**
 **Futuristic Design**: High-quality glass-style (Glassmorphism) interface.
 
@@ -131,6 +133,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 **Customization**: Right-click context menus, theme switching, and wallpapers.
 
 **Window Management**: Drag, minimize, maximize, and focus control.
+
 
 ### **Included Apps**
 🖥️ **Terminal**: Built-in CLI with commands like help, whoami, theme, and open.
@@ -147,16 +150,18 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 
 ⚙️ **Settings**: Change themes, wallpapers, and view system info.
 
-### 💻 **Tech Stack**
+
+## 💻 **Tech Stack**
 **Framework**: Electron
 
 **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 
 **Persistence**: LocalStorage
 
-### 📄 **License**
+
+## 📄 **License**
 This project is licensed under the MIT License.
 
-### 👤 **Creator**
+## 👤 **Creator**
 Created by **Byteforge0 (Yazen Alsaho)**.
 Feel free to reach out or star the repo if you like the project!
