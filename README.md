@@ -82,14 +82,21 @@ Byteforge0 and Yazen Alsaho are the same person.
 
 ---
 
+
 ## Screenshots
 
-Add your screenshots to a `screenshots/` folder and update the paths below.
+<p align="center">
+  <img src="./screenshots/login.png" alt="QamarOS Login Screen" width="800">
+</p>
 
-```md
-## Screenshots
+<p align="center">
+  <img src="./screenshots/desktop.png" alt="QamarOS Desktop" width="800">
+</p>
 
-![Desktop](./screenshots/desktop.png)
-![Login](./screenshots/login.png)
-![Settings](./screenshots/settings.png)
-![Terminal](./screenshots/terminal.png)
+<p align="center">
+  <img src="./screenshots/settings.png" alt="QamarOS Settings" width="800">
+</p>
+
+<p align="center">
+  <img src="./screenshots/terminal.png" alt="QamarOS Terminal" width="800">
+</p>
