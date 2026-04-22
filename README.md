@@ -36,48 +36,40 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
 
 ## ✨ Features
 
-### Core system
-- Custom boot screen
-- Boot animation
-- Boot sound support
-- First-time setup flow
-- User login screen
-- Persistent local account storage
-- Search bar for desktop apps
+### **Core System**
+**Custom Boot Screen**: Animated sequence with boot sound support.
 
-### Desktop UI
-- Futuristic glass-style interface
-- Taskbar with dynamic app buttons
-- Right-click desktop context menu
-- Wallpaper switching
-- Theme switching
-- Always-visible creator credit in the taskbar
+**First-time Setup**: User-friendly onboarding flow.
 
-### Window management
-- Open and focus app windows
-- Minimize windows
-- Maximize windows
-- Close windows
-- Restore minimized windows from the taskbar
-- Draggable windows
+**Login System**: Persistent local account storage via LocalStorage.
 
-### Built-in apps
-- Terminal
-- Browser
-- Notes
-- Calculator
-- Files
-- Recycle Bin
-- Settings
-- Guide
-- About
+**Search Bar**: Quickly find and launch desktop apps.
 
-### Persistence
-- Saved username and password
-- Saved notes
-- Saved theme
-- Saved wallpaper
-- Saved recycle bin contents
+
+### **Desktop UI**
+**Futuristic Design**: High-quality glass-style (Glassmorphism) interface.
+
+**Interactive Taskbar**: Dynamic buttons with window state tracking.
+
+**Customization**: Right-click context menus, theme switching, and wallpapers.
+
+**Window Management**: Drag, minimize, maximize, and focus control.
+
+
+### **Included Apps**
+🖥️ **Terminal**: Built-in CLI with commands like help, whoami, theme, and open.
+
+🌐 **Browser**: A webview-powered browser for surfing the web.
+
+📝 **Notes**: Simple text editor with local saving functionality.
+
+🔢 **Calculator**: Basic math operations in a sleek UI.
+
+📁 **Files**: Simulated file explorer.
+
+🗑️ **Recycle Bin**: Manage deleted items.
+
+⚙️ **Settings**: Change themes, wallpapers, and view system info.
 
 ---
 
@@ -114,41 +106,7 @@ It is **not a real hardware-level operating system**. Instead, it is a fully cus
    ```bash
    npm start
 
-## ✨ **Features**
-### **Core System**
-**Custom Boot Screen**: Animated sequence with boot sound support.
 
-**First-time Setup**: User-friendly onboarding flow.
-
-**Login System**: Persistent local account storage via LocalStorage.
-
-**Search Bar**: Quickly find and launch desktop apps.
-
-
-### **Desktop UI**
-**Futuristic Design**: High-quality glass-style (Glassmorphism) interface.
-
-**Interactive Taskbar**: Dynamic buttons with window state tracking.
-
-**Customization**: Right-click context menus, theme switching, and wallpapers.
-
-**Window Management**: Drag, minimize, maximize, and focus control.
-
-
-### **Included Apps**
-🖥️ **Terminal**: Built-in CLI with commands like help, whoami, theme, and open.
-
-🌐 **Browser**: A webview-powered browser for surfing the web.
-
-📝 **Notes**: Simple text editor with local saving functionality.
-
-🔢 **Calculator**: Basic math operations in a sleek UI.
-
-📁 **Files**: Simulated file explorer.
-
-🗑️ **Recycle Bin**: Manage deleted items.
-
-⚙️ **Settings**: Change themes, wallpapers, and view system info.
 
 
 ## 💻 **Tech Stack**
