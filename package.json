@@ -1,0 +1,14 @@
+{
+  "name": "qamaros",
+  "version": "5.0.0",
+  "description": "QamarOS - futuristic desktop OS simulation made by Byteforge0 (Yazen Alsaho)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Byteforge0 (Yazen Alsaho)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^40.0.0"
+  }
+}

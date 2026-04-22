@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QamarOS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="boot-screen" class="screen active">
+    <div class="boot-center">
+      <div class="boot-logo-wrap">
+        <div class="logo-ring"></div>
+        <div class="boot-core">Q</div>
+      </div>
+      <h1>QamarOS</h1>
+      <p class="subtitle">Initializing desktop environment...</p>
+      <div class="loading-bar">
+        <div class="loading-progress" id="loading-progress"></div>
+      </div>
+      <p class="credits">Made by Byteforge0 (Yazen Alsaho)</p>
+    </div>
+  </section>
+
+  <section id="auth-screen" class="screen">
+    <div class="auth-card" id="setup-card">
+      <h2>Welcome to QamarOS</h2>
+      <p class="auth-subtitle">First start detected. Create your account.</p>
+      <input id="setup-username" class="auth-input" type="text" placeholder="Choose a username" />
+      <input id="setup-password" class="auth-input" type="password" placeholder="Choose a password" />
+      <button id="setup-btn" class="auth-btn">Create account</button>
+      <p class="auth-credit">Made by Byteforge0 (Yazen Alsaho)</p>
+    </div>
+
+    <div class="auth-card hidden" id="login-card">
+      <h2>Login to QamarOS</h2>
+      <p class="auth-subtitle">Enter your credentials to continue.</p>
+      <input id="login-username" class="auth-input" type="text" placeholder="Username" />
+      <input id="login-password" class="auth-input" type="password" placeholder="Password" />
+      <button id="login-btn" class="auth-btn">Login</button>
+      <p id="login-error" class="auth-error"></p>
+      <p class="auth-credit">Made by Byteforge0 (Yazen Alsaho)</p>
+    </div>
+  </section>
+
+  <section id="desktop-screen" class="screen theme-blue wallpaper-1">
+    <div class="wallpaper-overlay"></div>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="topbar-logo">Q</span>
+        <span class="topbar-title">QamarOS</span>
+      </div>
+
+      <div class="topbar-center">
+        <input id="global-search" class="global-search" type="text" placeholder="Search apps..." />
+      </div>
+
+      <div class="topbar-right">
+        <button class="system-btn" id="sys-minimize" title="Minimize">—</button>
+        <button class="system-btn" id="sys-maximize" title="Maximize">□</button>
+        <button class="system-btn system-btn-close" id="sys-close" title="Close">✕</button>
+      </div>
+    </header>
+
+    <aside class="desktop-icons" id="desktop-icons">
+      <button type="button" class="desktop-icon" data-app="terminal">
+        <div class="icon-box">></div>
+        <span>Terminal</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="browser">
+        <div class="icon-box">🌐</div>
+        <span>Browser</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="notes">
+        <div class="icon-box">N</div>
+        <span>Notes</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="calculator">
+        <div class="icon-box">±</div>
+        <span>Calculator</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="files">
+        <div class="icon-box">📁</div>
+        <span>Files</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="trash">
+        <div class="icon-box">🗑</div>
+        <span>Recycle Bin</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="settings">
+        <div class="icon-box">⚙</div>
+        <span>Settings</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="guide">
+        <div class="icon-box">?</div>
+        <span>Guide</span>
+      </button>
+
+      <button type="button" class="desktop-icon" data-app="about">
+        <div class="icon-box">i</div>
+        <span>About</span>
+      </button>
+    </aside>
+
+    <main id="window-layer"></main>
+
+    <footer class="taskbar">
+      <div class="taskbar-left">
+        <button class="task-btn q-btn" id="start-button">Q</button>
+        <span class="taskbar-credit">Made by Byteforge0 (Yazen Alsaho)</span>
+      </div>
+
+      <div class="taskbar-center" id="taskbar-apps"></div>
+
+      <div class="taskbar-right">
+        <span id="clock">00:00</span>
+      </div>
+    </footer>
+
+    <div id="start-menu" class="start-menu hidden">
+      <h3>QamarOS</h3>
+      <p>Made by Byteforge0 (Yazen Alsaho)</p>
+      <div class="menu-grid">
+        <button class="menu-item" data-open="terminal">Terminal</button>
+        <button class="menu-item" data-open="browser">Browser</button>
+        <button class="menu-item" data-open="notes">Notes</button>
+        <button class="menu-item" data-open="calculator">Calculator</button>
+        <button class="menu-item" data-open="files">Files</button>
+        <button class="menu-item" data-open="trash">Recycle Bin</button>
+        <button class="menu-item" data-open="settings">Settings</button>
+        <button class="menu-item" data-open="guide">Guide</button>
+        <button class="menu-item" data-open="about">About</button>
+      </div>
+    </div>
+
+    <div id="context-menu" class="context-menu hidden">
+      <button class="context-item" data-action="refresh">Refresh Desktop</button>
+      <button class="context-item" data-action="open-settings">Open Settings</button>
+      <button class="context-item" data-action="open-terminal">Open Terminal</button>
+      <button class="context-item" data-action="open-guide">Open Guide</button>
+      <button class="context-item" data-action="open-trash">Open Recycle Bin</button>
+
+      <div class="context-divider"></div>
+
+      <div class="context-label">Wallpaper</div>
+      <button class="context-item" data-wallpaper="wallpaper-1">Aurora Blue</button>
+      <button class="context-item" data-wallpaper="wallpaper-2">Purple Night</button>
+      <button class="context-item" data-wallpaper="wallpaper-3">Emerald Mist</button>
+      <button class="context-item" data-wallpaper="wallpaper-4">Crimson Space</button>
+
+      <div class="context-divider"></div>
+
+      <div class="context-label">Theme</div>
+      <button class="context-item" data-theme="theme-blue">Blue</button>
+      <button class="context-item" data-theme="theme-purple">Purple</button>
+      <button class="context-item" data-theme="theme-green">Green</button>
+    </div>
+  </section>
+
+  <audio id="boot-audio" src="assets/boot.mp3" preload="auto"></audio>
+  <script src="renderer.js"></script>
+</body>
+</html>
